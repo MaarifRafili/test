@@ -1132,6 +1132,7 @@ body {
 
 
 
+
 /*-----------------------------------*\
   #BACK TO TOP
 \*-----------------------------------*/
@@ -1690,3 +1691,84 @@ body {
   .footer .container { grid-template-columns: 1fr 0.7fr 0.7fr 1fr; }
 
 }
+
+
+  /*    Download-btn    */
+.download-btn{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+.download-btn a{
+  position: relative;
+  background: #fff;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+.download-btn a:hover{
+  background: var(--marigold);
+  color: var(--marigold);
+  letter-spacing: 0.25em;
+  box-shadow: 0 0 35px var(--marigold);
+}
+.download-btn a:before{
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: var(--raisin-black-4);
+
+}
+.download-btn a span{
+  position: relative;
+  z-index: 1;
+
+}
+.download-btn a i{
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+.download-btn a i::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 10px;
+  height: 4px;
+  background: #27282c;
+  transform: translateX(-50%) skewX(325deg);
+  transition: 0.5s;
+}
+.download-btn a:hover i::before{
+  width: 20px;
+  left: 20%;
+}
+
+.download-btn a i::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 10px;
+  height: 4px;
+  background: #27282c;
+  transform: translateX(-50%) skewX(325deg);
+  transition: 0.5s;
+}
+.download-btn a:hover i::after{
+  width: 20px;
+  left: 80%;
+}
+
+
+
+
